@@ -42,10 +42,6 @@ img {
     padding: 0 15px;
     margin: 0 auto;
 }
-.section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
 /*HEADER*/
 .header {
     border-bottom: 1px solid #e7e9fc;
@@ -115,8 +111,7 @@ img {
 /*HERO*/
 .section-main {
     background-color: #2e2f42;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    min-height: 580px;
 }
 .main-title {
     font-weight: 700;
@@ -126,7 +121,6 @@ img {
             text-align: center;
             color: #fff;
             padding-top: 188px;
-            padding-bottom: 48px;
             max-width: 496px;
             margin: 0 auto 48px;
 }
@@ -144,9 +138,14 @@ img {
             letter-spacing: 0.04em;
             color: #fff;
             background-color: #4d5ae5;
-            margin: 0 auto 188px;
-            display: block;
-}
+            display: flex;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+            width: 169px;
+            height: 56px;
+            border: none;
+            margin-bottom: 168px;}
 /*FEATURES*/
 .features-subtitle {
     font-weight: 500;
@@ -155,6 +154,7 @@ img {
             letter-spacing: 0.02em;
             color: #2e2f42;
             margin-bottom: 8px;
+            margin-top: 140px;
 }
 .features-text {
     font-weight: 400;
@@ -162,12 +162,12 @@ img {
         letter-spacing: 0.02em;
         line-height: 1.5;
         color: #434455;
+        margin-bottom: 120px;
 }
 .features-list {
     display: flex;
     gap: 24px;
-    margin-top: 120px;
-    margin-bottom: 120px;
+   
 }
 .features-item {
     width: calc((100%-72px)/4);
@@ -175,8 +175,6 @@ img {
 /*TEAM*/
 .section-team {
     background-color: #f4f4fd;
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 .team-item {
     background-color: #fff;
@@ -206,7 +204,33 @@ img {
     line-height: 1.5;
     color: #434455;
 }
+.team-list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+        justify-content: center;
+}
+.team-card {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 32px;
+        border-radius: 0 0 4px 4px;
+            
+            width: 264px;
+            height: 380px;
+            box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+                background: #fff;
+                margin-bottom: 116px;
+}
+.team-card-text {
+    margin: 32px 16px;
+}
 /*PORTFOLIO*/
+.container.portfolio-container {
+    margin-bottom: 176px;
+}
 .title-portfolio {
     font-weight: 700;
         font-size: 36px;
@@ -214,8 +238,29 @@ img {
         letter-spacing: 0.02em;
             text-align: center;
             color: #2e2f42;
-            padding-top: 64px;
+            padding-top: 68px;
             margin-bottom: 72px;
+}
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    align-items: center;
+        justify-content: center;
+}
+.portfolio-card {
+    display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+}
+.portfolio-card-text {
+    border-bottom: 1px solid #e7e9fc;
+        border-left: 1px solid #e7e9fc;
+        border-right: 1px solid #e7e9fc;
+        width: 360px;
+        padding-bottom: 32px;
 }
 .portfolio-subtitle {
     font-weight: 500;
