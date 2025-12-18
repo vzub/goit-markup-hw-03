@@ -216,8 +216,6 @@ img {
         justify-content: center;
         flex-direction: column;
         gap: 32px;
-        border-radius: 0 0 4px 4px;
-            
             width: 264px;
             height: 380px;
             box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -291,11 +289,17 @@ img {
     color: #f4f4fd;
     margin-bottom: 16px;
 }
-
+.container.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 0 100px;
+}
 .footer-logo .logo-accent {
     color: #4D5AE5;
 }
 .footer-text {
     color: #f4f4fd;
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
