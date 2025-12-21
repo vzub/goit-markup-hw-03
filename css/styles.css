@@ -184,6 +184,7 @@ img {
 .team-item {
     background-color: #fff;
     width: calc((100% - 72px)/4);
+    border-radius: 0 0 4px 4px;
 
 }
 .title-team {
@@ -251,7 +252,7 @@ img {
     border-bottom: 1px solid #e7e9fc;
         border-left: 1px solid #e7e9fc;
         border-right: 1px solid #e7e9fc;
-        width: 360px;
+        width: calc((100% - 48px)/3);
         padding: 32px 16px;
 }
 .portfolio-subtitle {
@@ -282,12 +283,13 @@ img {
     text-transform: uppercase;
     color: #f4f4fd;
     margin-bottom: 16px;
+    padding-top: 100px;
 }
 .container.footer-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 100px 0 100px;
+    padding: 0 15px;
 }
 .footer-logo .logo-accent {
     color: #4D5AE5;
@@ -296,4 +298,5 @@ img {
     color: #f4f4fd;
     letter-spacing: 0.02em;
     max-width: 264px;
+    padding-bottom: 100px;
 }
